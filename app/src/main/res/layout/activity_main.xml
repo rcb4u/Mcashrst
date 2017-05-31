@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mcash"
+    tools:context="com.example.rspl_rahul.mcashrst.MainActivity">
+    <Button
+        android:id="@+id/CashOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CASH OUT"
+        android:textSize="22dp"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="31dp" />
+
+    <Button
+        android:id="@+id/PayForGoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay For Goods"
+        android:textSize="22dp"
+        app:layout_constraintRight_toLeftOf="@+id/CashIn"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/CashIn"
+        tools:layout_constraintBaseline_creator="1"
+        android:layout_marginRight="30dp" />
+
+    <Button
+        android:id="@+id/CashIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CASH IN"
+        android:textSize="22dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="34dp"
+        android:layout_marginRight="17dp" />
+
+</android.support.constraint.ConstraintLayout>
